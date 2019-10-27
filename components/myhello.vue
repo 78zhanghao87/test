@@ -18,7 +18,7 @@ export default {
   methods:{
     adduser: function () {
       // `this` 在方法里指向当前 Vue 实例
-      this.msg='Hello ' + '!';
+      this.msg='Hello branch' + '!';
     }
   }
 }
