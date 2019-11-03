@@ -1,7 +1,7 @@
 .htaccess
 css.php
 node_modules
-build
+dist
 rpc/
 sites/site*/admin/
 sites/site*/private/
