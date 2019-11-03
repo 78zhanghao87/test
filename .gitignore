@@ -1,5 +1,6 @@
 .htaccess
 css.php
+node_modules
 rpc/
 sites/site*/admin/
 sites/site*/private/
