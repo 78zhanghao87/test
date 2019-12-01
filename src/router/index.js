@@ -1,6 +1,6 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-// import Home from '@/views/Home.vue'
+import Home from '@/views/Home.vue'
 import Layout from '@/views/Layout.vue'
 import weather from '@/views/weather.vue'
 import blank from '@/views/blank.vue'
@@ -13,7 +13,20 @@ const routes = [
     path: '/',
     name: 'home',
     component: Layout,
-    redirect: "/weather",
+    children: [
+      {
+        path: "/",
+        meta: {
+          title: "天气预报"
+        },
+         component: Home
+      },
+    ]
+  },
+  {
+    path: '/weather',
+    name: 'home',
+    component: Layout,
     children: [
       {
         path: "/weather",

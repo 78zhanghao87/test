@@ -1,5 +1,6 @@
 <template>
   <div>
+    <audio src="/static/audio/romeostune.mp3" autoplay="" :controls="showcontrols" @ended="nextsong()">    </audio>
     Now,
     <span class="type"></span>
   </div>
@@ -9,7 +10,10 @@ import Typed from "typed.js";
 export default {
   name: "blank",
   data() {
-    return {};
+    return {
+      // currentSong:'',
+      showcontrols:true
+    };
   },
   mounted() {
     let typed = new Typed(".type", {
